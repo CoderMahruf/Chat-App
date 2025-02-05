@@ -75,7 +75,7 @@ ASGI_APPLICATION = 'mysite.asgi.application'
 
 CHANNEL_LAYERS ={
     'default':{
-        'BACKEND':'channels.layers.InMemoryChannelLeyar'
+        'BACKEND':'channels.layers.InMemoryChannelLayer'
     }
 }
 
