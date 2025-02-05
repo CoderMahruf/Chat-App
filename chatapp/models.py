@@ -15,5 +15,8 @@ class ChatMessage(models.Model):
     message_content = models.TextField()
     date = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.user.username
+
     class Meta:
         ordering = ('date',)
