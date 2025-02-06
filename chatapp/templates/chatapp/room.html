@@ -1,3 +1,6 @@
+{% extends 'chatapp/base.html' %}
+
+{% block content %}
 {{chatroom.name}}
 
 <div id="chat-messages">
@@ -51,3 +54,5 @@
         messageInput.value = ""
     }
 </script>
+
+{% endblock content %}
